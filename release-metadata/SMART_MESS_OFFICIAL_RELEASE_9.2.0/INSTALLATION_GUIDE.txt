@@ -1,0 +1,25 @@
+SMART MESS 9.2.0 INSTALLATION GUIDE
+============================================================
+Package: com.shakthimess.smartmessv9
+Version: 9.2.0 (versionCode 602)
+Target OS: Android 7.0+ (API 24 to 36)
+
+DIRECT UPGRADE FROM 9.1.0:
+1. Connect target device via USB with ADB debugging enabled.
+2. Run in terminal:
+   adb install -r SMART_MESS_9.2.0_OFFICIAL.apk
+3. Confirm output displays "Success".
+4. Existing student and supervisor login credentials, cached reservations, and settings are preserved.
+
+FRESH INSTALLATION:
+1. Copy SMART_MESS_9.2.0_OFFICIAL.apk to the device.
+2. Enable "Install unknown apps" permission for your file manager.
+3. Tap the APK to begin installation.
+4. Launch "Smart Mess" from the home screen / app drawer.
+
+INTEGRITY VERIFICATION:
+SHA-256 Checksum:
+6B9A3FC07CF780BAF663E22A932C40C60BEEC598DAD838627E11B78B7F2E5824
+
+PowerShell verification:
+Get-FileHash SMART_MESS_9.2.0_OFFICIAL.apk -Algorithm SHA256

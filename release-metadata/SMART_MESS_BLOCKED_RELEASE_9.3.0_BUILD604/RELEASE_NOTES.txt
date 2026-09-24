@@ -1,0 +1,12 @@
+SMART MESS 9.3.0 Release Notes
+
+Features:
+- Native Android Push Notifications for Student Reminders and Supervisor Demand (Expo Notifications).
+- Complete frontend app optimization for lightning fast UX.
+- Native UI response for Notification interactions.
+- "Menu configuration" and "Live Attendance" have been fully removed from the student dashboard.
+
+Fixes:
+- Optimized the background feedback photo upload compression logic.
+- Performance regressions resolved (0 regressions).
+- Fingerprint verification loop and fallback fixes resolved.

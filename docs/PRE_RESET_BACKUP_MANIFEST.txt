@@ -1,0 +1,297 @@
+﻿SMART MESS - PRE-RESET BACKUP MANIFEST
+================================================================================
+Timestamp: 2026-09-24 09:59:05 +05:30
+Project Root: C:\Users\mkkni\OneDrive\Desktop\project
+Computer / Machine User: mkkni
+================================================================================
+
+SECTION 1: KEY ACTIVE SMART MESS REPOSITORIES
+--------------------------------------------------------------------------------
+REPOSITORY: Frontend Old UI (Secure / Production)
+Path: C:\Users\mkkni\OneDrive\Desktop\project\frontend-old-ui-secure
+Current Branch: feature/old-ui-fingerprint-reservation
+HEAD Commit: 8722161e5d425a31501bbb49b600c3a925c35dd7 (2026-09-10 11:05:50 +0530): feat: calendar date picker + 12h AM/PM clock picker + reservation schedule display
+Configured Remotes:
+  (None configured)
+Worktree Status summary: 62 changed/untracked items
+     M App.tsx
+     M android/app/src/main/AndroidManifest.xml
+     M app.json
+     M package-lock.json
+     M package.json
+     M src/components/AnimatedButton.tsx
+     M src/components/AnimatedCard.tsx
+     M src/components/NetworkStatusBanner.tsx
+     M src/components/TimePickerField.tsx
+     M src/context/AuthContext.tsx
+     M src/navigation/AppNavigator.tsx
+     M src/screens/AttendanceReportsScreen.tsx
+     M src/screens/AttendanceScreen.tsx
+     M src/screens/HomeScreen.tsx
+     M src/screens/LeaderboardScreen.tsx
+     M src/screens/LoginScreen.tsx
+     M src/screens/MenuManagementScreen.tsx
+     M src/screens/NfcAttendanceDashboardScreen.tsx
+     M src/screens/NonAttendingStudentsScreen.tsx
+     M src/screens/ReservationScheduleScreen.tsx
+     M src/screens/ReservationScreen.tsx
+     M src/screens/StudentManagementScreen.tsx
+     M src/screens/SupervisorDashboardScreen.tsx
+     M src/screens/WasteAnalyticsScreen.tsx
+     M src/services/ApiService.ts
+     M src/services/biometricAuth.ts
+     M src/services/networkService.ts
+     M src/tests/fingerprintRegression.js
+    ?? SMART_MESS_FEATURE_MATRIX.md
+    ?? SMART_MESS_OLD_UI_WEB_FEATURE_MATRIX.md
+    ?? dist-build-web/
+    ?? dist-connected/
+    ?? dist-local/
+    ?? dist-online/
+    ?? dist-runtime/
+    ?? scripts/
+    ?? src/components/ChangePasswordModal.tsx
+    ?? src/components/DemoBadge.tsx
+    ?? src/components/DevicePinModal.tsx
+    ?? src/components/ErrorBoundary.tsx
+    ?? src/config/
+    ?? src/data/
+    ?? src/hooks/
+    ?? src/services/.agents.code-workspace
+    ?? src/services/authSessionStorage.ts
+    ?? src/services/devicePinService.ts
+    ?? src/services/deviceSecurityService.ts
+    ?? src/services/localDatabase.web.ts
+    ?? src/services/notificationService.ts
+    ?? src/services/performanceLogger.ts
+    ?? src/services/photoOptimizer.ts
+    ?? src/tests/device_pin_auth_regression.js
+    ?? src/tests/feature_recovery_static_regression.js
+    ?? src/tests/feedbackPhotoRegression.js
+    ?? src/tests/login_biometric_password_regression.js
+    ?? src/tests/notificationRegression.js
+    ?? src/tests/performanceRegression.js
+    ?? src/tests/profilePhotoUpload.js
+    ?? src/tests/profileScreenLoading.js
+    ?? src/tests/screen_benchmark_results.json
+    ?? src/tests/web_conversion_static_regression.js
+    ?? vercel.json
+--------------------------------------------------------------------------------
+REPOSITORY: Backend (API Server / Mongoose)
+Path: C:\Users\mkkni\OneDrive\Desktop\project\backend
+Current Branch: main
+HEAD Commit: aa6c95f0ab00602da25bc19fe00d152f3207f388 (2026-09-18 11:26:11 +0530): perf(feedback): add compound indexes to Feedback model and lean queries
+Configured Remotes:
+  origin	https://github.com/balaji-siet/BAVA-backend.git (fetch)
+  origin	https://github.com/balaji-siet/BAVA-backend.git (push)
+Worktree Status summary: 19 changed/untracked items
+     M src/controllers/notificationController.js
+     M src/routes/api.js
+     M src/services/notificationService.js
+    ?? ecosystem.config.js
+    ?? scripts/audit_logcat.js
+    ?? scripts/bottleneck_comparison.js
+    ?? scripts/concurrency_diagnostics.js
+    ?? scripts/load_test.js
+    ?? scripts/password_management_regression.js
+    ?? scripts/performance_diagnostics.js
+    ?? scripts/profile_reservation.js
+    ?? scripts/realistic_load_test.js
+    ?? scripts/test_cluster_pool_matrix.js
+    ?? scripts/test_optimized_concurrency.js
+    ?? scripts/test_phase14_db_matrix.js
+    ?? scripts/test_pool_size.js
+    ?? src/models/NotificationDispatchLog.js
+    ?? src/models/PushToken.js
+    ?? uploads/
+--------------------------------------------------------------------------------
+REPOSITORY: Frontend New UI (Protected Hardened)
+Path: C:\Users\mkkni\OneDrive\Desktop\project\frontend
+Current Branch: codex/official-release-hardening
+HEAD Commit: 36ae74c6655a79878dc6df3b7a14adae713d4ef1 (2026-09-07 06:46:49 +0100): chore(android): configure official release signing
+Configured Remotes:
+  (None configured)
+Worktree Status summary: 18 changed/untracked items
+     M app.json
+     M package-lock.json
+     M package.json
+     M src/context/AuthContext.tsx
+     M src/services/ApiService.ts
+    ?? accept_licenses.ps1
+    ?? build_debug_apk.ps1
+    ?? build_local_gradle.ps1
+    ?? full_local_build_pipeline.ps1
+    ?? install_cmdline_tools.ps1
+    ?? run_local_apk_build.ps1
+    ?? run_local_prebuild.ps1
+    ?? scripts/
+    ?? setup_path.ps1
+    ?? src/tests/apiUrlReleaseGuard.js
+    ?? step1_local_build_verify.ps1
+    ?? update_cmdline_path.ps1
+    ?? verify_all_tools.ps1
+--------------------------------------------------------------------------------
+
+SECTION 2: ALL OTHER DETECTED GIT REPOSITORIES IN PROJECT TREE
+--------------------------------------------------------------------------------
+Path: (Project Root Directory) | Branch: main | Remote: (No remote)
+  HEAD: 779166dfee0168da1c160834a260cd4c16efbd42 Recover root repository ignore baseline
+Path: ai | Branch: main | Remote: (No remote)
+  HEAD: 779166dfee0168da1c160834a260cd4c16efbd42 Recover root repository ignore baseline
+Path: backend_clone | Branch: main | Remote: origin	https://github.com/balaji-siet/BAVA-backend.git (fetch); origin	https://github.com/balaji-siet/BAVA-backend.git (push)
+  HEAD: 
+Path: frontend-apk-build-8722161 | Branch:  | Remote: (No remote)
+  HEAD: 8722161e5d425a31501bbb49b600c3a925c35dd7 feat: calendar date picker + 12h AM/PM clock picker + reservation schedule display
+Path: frontend-old-ui | Branch:  | Remote: (No remote)
+  HEAD: be344ecf4006c23cf03886815ebe0f319cc58c4e chore(release): remove hardware wording from app headers
+Path: frontend-old-ui-clean | Branch: restore/old-ui-clean | Remote: (No remote)
+  HEAD: be344ecf4006c23cf03886815ebe0f319cc58c4e chore(release): remove hardware wording from app headers
+Path: project_backup | Branch: main | Remote: (No remote)
+  HEAD: 779166dfee0168da1c160834a260cd4c16efbd42 Recover root repository ignore baseline
+Path: project_backup\ai | Branch: main | Remote: (No remote)
+  HEAD: 779166dfee0168da1c160834a260cd4c16efbd42 Recover root repository ignore baseline
+Path: project_backup\backend | Branch: main | Remote: origin	https://github.com/balaji-siet/BAVA-backend.git (fetch); origin	https://github.com/balaji-siet/BAVA-backend.git (push)
+  HEAD: 979f16dd7c7cb412a39d7c12ead0e4e19220e464 fix: add graceful SIGTERM/SIGINT shutdown handling for MongoDB and HTTP server
+Path: project_backup\backend_clone | Branch: main | Remote: origin	https://github.com/balaji-siet/BAVA-backend.git (fetch); origin	https://github.com/balaji-siet/BAVA-backend.git (push)
+  HEAD: 
+Path: project_backup\frontend | Branch: master | Remote: (No remote)
+  HEAD: 64abeca36acd671447dcbdb482371f5dbce928c0 Update frontend codebase
+Path: project_backup_20230811_1047 | Branch: main | Remote: (No remote)
+  HEAD: 779166dfee0168da1c160834a260cd4c16efbd42 Recover root repository ignore baseline
+Path: project_backup_20230811_1047\ai | Branch: main | Remote: (No remote)
+  HEAD: 779166dfee0168da1c160834a260cd4c16efbd42 Recover root repository ignore baseline
+Path: project_backup_20230811_1047\backend | Branch: main | Remote: origin	https://github.com/balaji-siet/BAVA-backend.git (fetch); origin	https://github.com/balaji-siet/BAVA-backend.git (push)
+  HEAD: 979f16dd7c7cb412a39d7c12ead0e4e19220e464 fix: add graceful SIGTERM/SIGINT shutdown handling for MongoDB and HTTP server
+Path: project_backup_20230811_1047\backend_clone | Branch: main | Remote: origin	https://github.com/balaji-siet/BAVA-backend.git (fetch); origin	https://github.com/balaji-siet/BAVA-backend.git (push)
+  HEAD: 
+Path: project_backup_20230811_1047\frontend | Branch: master | Remote: (No remote)
+  HEAD: 64abeca36acd671447dcbdb482371f5dbce928c0 Update frontend codebase
+Path: project_backup_20230811_1050 | Branch: main | Remote: (No remote)
+  HEAD: 779166dfee0168da1c160834a260cd4c16efbd42 Recover root repository ignore baseline
+Path: project_backup_20230811_1050\ai | Branch: main | Remote: (No remote)
+  HEAD: 779166dfee0168da1c160834a260cd4c16efbd42 Recover root repository ignore baseline
+Path: project_backup_20230811_1050\backend | Branch: main | Remote: origin	https://github.com/balaji-siet/BAVA-backend.git (fetch); origin	https://github.com/balaji-siet/BAVA-backend.git (push)
+  HEAD: 979f16dd7c7cb412a39d7c12ead0e4e19220e464 fix: add graceful SIGTERM/SIGINT shutdown handling for MongoDB and HTTP server
+Path: project_backup_20230811_1050\backend_clone | Branch: main | Remote: origin	https://github.com/balaji-siet/BAVA-backend.git (fetch); origin	https://github.com/balaji-siet/BAVA-backend.git (push)
+  HEAD: 
+Path: project_backup_20230811_1050\frontend | Branch: master | Remote: (No remote)
+  HEAD: 64abeca36acd671447dcbdb482371f5dbce928c0 Update frontend codebase
+Path: smart-mess-software | Branch: master | Remote: (No remote)
+  HEAD: 261662f010e3de8ff7f5d5d71313e98a96409205 Initial commit
+Path: SMART_MESS_VERIFIED_DEMO_BACKUP\backend | Branch: main | Remote: origin	https://github.com/balaji-siet/BAVA-backend.git (fetch); origin	https://github.com/balaji-siet/BAVA-backend.git (push)
+  HEAD: 979f16dd7c7cb412a39d7c12ead0e4e19220e464 fix: add graceful SIGTERM/SIGINT shutdown handling for MongoDB and HTTP server
+Path: SMART_MESS_VERIFIED_DEMO_BACKUP\frontend | Branch: master | Remote: (No remote)
+  HEAD: 64abeca36acd671447dcbdb482371f5dbce928c0 Update frontend codebase
+Path: test_clone | Branch:  | Remote: origin	https://github.com/balaji-siet/BAVA-backend.git (fetch); origin	https://github.com/balaji-siet/BAVA-backend.git (push)
+  HEAD: 
+
+================================================================================
+SECTION 3: OFFICIAL RELEASE DIRECTORIES AND APK CHECKSUMS (SHA-256)
+================================================================================
+
+RELEASE DIRECTORY: SMART_MESS_OFFICIAL_RELEASE_9.1.0
+  META FILE: CONTROLLED_DEPLOYMENT_CHECKLIST.md (2516 bytes)
+  META FILE: FEATURE_MATRIX.md (2548 bytes)
+  META FILE: INSTALLATION_GUIDE.txt (3157 bytes)
+  META FILE: QA_REPORT.txt (3692 bytes)
+  META FILE: RELEASE_FREEZE_9.1.0.txt (1529 bytes)
+  META FILE: RELEASE_NOTES.txt (2149 bytes)
+  META FILE: SHA256.txt (96 bytes)
+  APK FILE : SMART_MESS_9.1.0_OFFICIAL.apk
+  SIZE     : 69744666 bytes
+  SHA-256  : F0CB2107576B492F25B4A2D963881ACA810C49926DD075103C4D02173EF818AE
+  META FILE: SMART_MESS_DAILY_MONITORING.md (3787 bytes)
+  META FILE: SMART_MESS_PRODUCTION_ISSUES.md (2291 bytes)
+  META FILE: SMART_MESS_STUDENT_SUPPORT.md (3185 bytes)
+  META FILE: SMART_MESS_SUPERVISOR_GUIDE.md (2660 bytes)
+
+RELEASE DIRECTORY: SMART_MESS_OFFICIAL_RELEASE_9.2.0
+  META FILE: FEATURE_MATRIX.md (2219 bytes)
+  META FILE: INSTALLATION_GUIDE.txt (936 bytes)
+  META FILE: QA_REPORT.txt (1756 bytes)
+  META FILE: RELEASE_FREEZE_9.2.0.txt (865 bytes)
+  META FILE: RELEASE_NOTES.txt (554 bytes)
+  META FILE: SHA256.txt (67 bytes)
+  APK FILE : SMART_MESS_9.2.0_OFFICIAL.apk
+  SIZE     : 69750554 bytes
+  SHA-256  : 6B9A3FC07CF780BAF663E22A932C40C60BEEC598DAD838627E11B78B7F2E5824
+
+RELEASE DIRECTORY: SMART_MESS_OFFICIAL_RELEASE_9.2.1
+  META FILE: QA_REPORT.txt (4773 bytes)
+  META FILE: RELEASE_FREEZE_9.2.1.txt (2010 bytes)
+  META FILE: RELEASE_NOTES.txt (2968 bytes)
+  META FILE: SHA256.txt (555 bytes)
+  APK FILE : SMART_MESS_9.2.1_OFFICIAL.apk
+  SIZE     : 69751302 bytes
+  SHA-256  : BA3B86A3D00A091BD2881A66756D0133C1A0A2D99E762E65231D9B63E8D10458
+
+RELEASE DIRECTORY: SMART_MESS_OFFICIAL_RELEASE_9.2.2
+  META FILE: PERFORMANCE_REPORT.md (4847 bytes)
+  META FILE: QA_REPORT.txt (4134 bytes)
+  META FILE: RELEASE_FREEZE_9.2.2.txt (1829 bytes)
+  META FILE: RELEASE_NOTES.txt (5970 bytes)
+  META FILE: SHA256.txt (727 bytes)
+  APK FILE : SMART_MESS_9.2.2_OFFICIAL.apk
+  SIZE     : 69771666 bytes
+  SHA-256  : E5EC4F86FC0F9C19521EE24B2F70C01CE4C85C1917BA54B0D82D74FC29F912F4
+
+RELEASE DIRECTORY: SMART_MESS_BLOCKED_RELEASE_9.3.0_BUILD604
+  META FILE: QA_REPORT.txt (434 bytes)
+  META FILE: RELEASE_FREEZE_9.3.0.txt (212 bytes)
+  META FILE: RELEASE_NOTES.txt (542 bytes)
+  META FILE: SHA256.txt (740 bytes)
+  APK FILE : SMART_MESS_9.3.0_OFFICIAL.apk
+  SIZE     : 70628386 bytes
+  SHA-256  : C1DC585D1B1EB04A080995847BC9EA942266FB196C475D41CB49F17248211F27
+
+RELEASE DIRECTORY: SMART_MESS_FINAL_RELEASE_BACKUP
+  APK FILE : app-release.apk
+  SIZE     : 69183308 bytes
+  SHA-256  : 6000D38ADDF3A589E95E9CF5F92B806D1231D5232016248861F61D08544A8C4B
+  META FILE: RELEASE_VERIFICATION_REPORT.md (439 bytes)
+  META FILE: SHA256_CHECKSUM.txt (217 bytes)
+  META FILE: SMART_MESS_FINAL_RELEASE_INFO.txt (240 bytes)
+
+================================================================================
+SECTION 4: KNOWN RELEASE HASH VERIFICATION
+================================================================================
+Version 9.3.0 (BLOCKED BUILD 604) expected: C1DC585D1B1EB04A080995847BC9EA942266FB196C475D41CB49F17248211F27
+Version 9.2.0 expected: 6B9A3FC07CF780BAF663E22A932C40C60BEEC598DAD838627E11B78B7F2E5824
+Version 9.2.2 expected: E5EC4F86FC0F9C19521EE24B2F70C01CE4C85C1917BA54B0D82D74FC29F912F4
+Version 9.1.0 expected: F0CB2107576B492F25B4A2D963881ACA810C49926DD075103C4D02173EF818AE
+Version 9.2.1 expected: BA3B86A3D00A091BD2881A66756D0133C1A0A2D99E762E65231D9B63E8D10458
+
+================================================================================
+SECTION 5: ROOT DOCUMENTATION AND CSV INVENTORY
+================================================================================
+  CONTROLLED_DEPLOYMENT_CHECKLIST.md (2333 bytes, LastWriteTime: 09/17/2026 09:04:36)
+  CONTROLLED_UPDATE_25_STUDENTS_CHECKLIST.md (3129 bytes, LastWriteTime: 09/17/2026 11:50:28)
+  emu_log.txt (4385 bytes, LastWriteTime: 08/10/2026 13:43:57)
+  PROJECT_STATUS_FINAL.txt (508 bytes, LastWriteTime: 08/29/2026 16:11:29)
+  README.md (4819 bytes, LastWriteTime: 07/02/2026 23:23:50)
+  SMARTMESS.md (1603 bytes, LastWriteTime: 08/03/2026 21:57:49)
+  SMART_MESS_9.2.0_UPDATE_MONITORING.md (5771 bytes, LastWriteTime: 09/18/2026 08:47:14)
+  SMART_MESS_DAILY_IMPACT_REPORT.md (1326 bytes, LastWriteTime: 09/18/2026 08:46:52)
+  SMART_MESS_DAILY_MONITORING.md (2548 bytes, LastWriteTime: 09/17/2026 09:04:12)
+  SMART_MESS_DEMO_CHECKLIST.md (3150 bytes, LastWriteTime: 08/29/2026 16:11:01)
+  SMART_MESS_DEMO_RECOVERY.md (2018 bytes, LastWriteTime: 08/29/2026 16:11:18)
+  SMART_MESS_FINAL_RELEASE_VERIFICATION_REPORT.md (4405 bytes, LastWriteTime: 08/28/2026 20:27:17)
+  SMART_MESS_FINAL_VERIFICATION_REPORT.md (11173 bytes, LastWriteTime: 08/29/2026 16:10:50)
+  SMART_MESS_IMPACT_DATA.csv (1841 bytes, LastWriteTime: 09/18/2026 08:54:39)
+  SMART_MESS_JURY_QA_PREPARATION.md (51675 bytes, LastWriteTime: 08/31/2026 08:59:50)
+  SMART_MESS_PRODUCTION_ISSUES.md (2291 bytes, LastWriteTime: 09/16/2026 15:31:01)
+  SMART_MESS_STUDENT_SUPPORT.md (3301 bytes, LastWriteTime: 09/18/2026 08:43:05)
+  SMART_MESS_SUPERVISOR_GUIDE.md (2660 bytes, LastWriteTime: 09/18/2026 08:43:08)
+  SMART_MESS_WEEKLY_IMPACT_REPORT.md (1822 bytes, LastWriteTime: 09/18/2026 08:47:00)
+  SRI Shakthi Smart Mess – Codex Prompt Documentation.docx (22653 bytes, LastWriteTime: 07/02/2026 22:59:52)
+  SUPERVISOR_FEATURE_DIFF.md (2218 bytes, LastWriteTime: 08/28/2026 23:57:51)
+
+================================================================================
+SECTION 6: SIGNING KEYSTORE INVENTORY
+================================================================================
+Official Keystore: C:\Users\mkkni\.smartmess\signing\smartmess-official-release.jks
+File Size: 4002 bytes
+SHA-256: 298273D85CD20F8F71DC14B150D4908DF99ACFB81D28CE917F5CCFCE68B2BC68
+Properties File: C:\Users\mkkni\.smartmess\signing\smartmess-release-signing.properties
+Official signing backup 1: PENDING USER EXTERNAL BACKUP
+Official signing backup 2: PENDING USER EXTERNAL BACKUP

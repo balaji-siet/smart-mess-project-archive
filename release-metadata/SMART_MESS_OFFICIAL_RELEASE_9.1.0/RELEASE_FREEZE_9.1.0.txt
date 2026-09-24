@@ -1,0 +1,26 @@
+================================================================================
+SMART MESS 9.1.0 — OFFICIAL RELEASE FREEZE RECORD
+================================================================================
+
+Version: 9.1.0
+VersionCode: 601
+Package: com.shakthimess.smartmessv9
+Official APK: SMART_MESS_9.1.0_OFFICIAL.apk
+SHA-256: F0CB2107576B492F25B4A2D963881ACA810C49926DD075103C4D02173EF818AE
+Signing Certificate Fingerprint (SHA-256): fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c
+Signing Certificate Fingerprint (SHA-1): 5e8f16062ea3cd2c4a0d547876baa6f38cabf625
+Production API: https://bava-backend.onrender.com/api
+Health Endpoint: https://bava-backend.onrender.com/api/health
+Release Date/Time: 2026-09-15T22:21:27+05:30
+Source Git Commit: 8722161e5d425a31501bbb49b600c3a925c35dd7
+Backend Git Commit: c8fa9ec0e64f191888398a0e246fa9488a646058
+Protected New UI Git Commit: 36ae74c6655a79878dc6df3b7a14adae713d4ef1
+
+--------------------------------------------------------------------------------
+FREEZE RULES
+--------------------------------------------------------------------------------
+1. 9.1.0 is permanently frozen. No rebuild or silent replacement permitted.
+2. If any reproducible production defect is discovered requiring code changes,
+   a new version (9.1.1, versionCode 602) must be created on a dedicated hotfix branch.
+3. No secret keys, passwords, or credentials are contained in this release artifact.
+================================================================================

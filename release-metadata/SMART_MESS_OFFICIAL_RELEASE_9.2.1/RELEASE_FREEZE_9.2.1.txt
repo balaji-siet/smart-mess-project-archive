@@ -1,0 +1,68 @@
+SMART MESS 9.2.1 — RELEASE FREEZE DECLARATION
+================================================
+
+This document certifies that SMART MESS 9.2.1 is now FROZEN.
+
+================================================
+RELEASE IDENTITY
+================================================
+
+Version: 9.2.1
+VersionCode: 603
+Package: com.shakthimess.smartmessv9
+
+APK File:
+SMART_MESS_9.2.1_OFFICIAL.apk
+
+APK SHA-256:
+BA3B86A3D00A091BD2881A66756D0133C1A0A2D99E762E65231D9B63E8D10458
+
+Backend Commit:
+8d623ba fix(feedback): resolve photo upload HTTP 500 error, increase body limit to 10mb, and harden error handler
+
+Frontend Commit:
+Built from frontend-old-ui-secure with version 9.2.1 / versionCode 603
+
+================================================
+FROZEN ARTIFACTS
+================================================
+
+The following artifacts are FROZEN and MUST NOT be modified:
+
+1. SMART_MESS_9.2.1_OFFICIAL.apk
+   SHA-256: BA3B86A3D00A091BD2881A66756D0133C1A0A2D99E762E65231D9B63E8D10458
+
+2. SMART_MESS_9.2.0_OFFICIAL.apk (previous release)
+   SHA-256: 6B9A3FC07CF780BAF663E22A932C40C60BEEC598DAD838627E11B78B7F2E5824
+
+3. Protected NEW UI (frontend/)
+   HEAD: 36ae74c6655a79878dc6df3b7a14adae713d4ef1
+
+================================================
+RULES
+================================================
+
+DO NOT modify the 9.2.1 APK
+DO NOT rebuild the 9.2.1 APK
+DO NOT change the version number
+DO NOT change the package name
+DO NOT change the signing key
+DO NOT modify the frozen 9.2.0 APK
+DO NOT modify the protected NEW UI
+
+Any further changes require a new version (9.2.2 or higher).
+
+================================================
+VERIFICATION STATUS
+================================================
+
+Backend regression: 14/14 PASS
+Frontend regression: 20/20 PASS
+Physical device QA: ALL PASS
+Signing identity: MATCHES 9.2.0
+Data preservation: VERIFIED
+Upgrade path: 9.2.0 → 9.2.1 VERIFIED
+
+================================================
+FREEZE DATE: 2026-09-18
+================================================

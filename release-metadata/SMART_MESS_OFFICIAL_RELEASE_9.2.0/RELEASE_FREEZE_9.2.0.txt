@@ -1,0 +1,16 @@
+SMART MESS 9.2.0 RELEASE FREEZE
+============================================================
+Release: SMART MESS 9.2.0 OFFICIAL
+Version: 9.2.0
+VersionCode: 602
+Package: com.shakthimess.smartmessv9
+APK: SMART_MESS_9.2.0_OFFICIAL.apk
+SHA-256: 6B9A3FC07CF780BAF663E22A932C40C60BEEC598DAD838627E11B78B7F2E5824
+Size: 69,750,554 bytes (66.52 MB)
+Freeze Date: 2026-09-17
+Signer #1 SHA-256 Digest: fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c
+Status: FROZEN FOR DEPLOYMENT
+============================================================
+All gates, static checks, 152 regression assertions, physical upgrade from 9.1.0, and security audits PASS.
+Redundant "Sign in with Fingerprint" button above One-Tap Login has been removed, maintaining clean Unified One-Tap Login.
+Do NOT modify or rebuild this APK without an approved production defect change request.

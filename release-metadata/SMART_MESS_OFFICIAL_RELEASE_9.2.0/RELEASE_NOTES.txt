@@ -1,0 +1,14 @@
+SMART MESS 9.2.0
+
+Improved:
+- Fingerprint authentication visibility now follows actual device and account state.
+- Unified fingerprint-secured One-Tap Login experience.
+- Fingerprint state refresh after returning to the application.
+- Improved handling of biometric cancellation, failure, unavailable state, and lockout.
+- Improved Remember Account and fingerprint interaction.
+
+Security preserved:
+- No plaintext password storage.
+- No biometric data storage.
+- No offline biometric authentication bypass.
+- Student/Supervisor role isolation preserved.

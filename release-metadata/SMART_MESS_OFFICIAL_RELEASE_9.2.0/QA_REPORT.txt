@@ -1,0 +1,41 @@
+SMART MESS 9.2.0 — FINAL RELEASE QA REPORT
+============================================================
+Date: 2026-09-17
+Device Tested: TECNO-LJ7 (Android 16, API 36)
+APK: SMART_MESS_9.2.0_OFFICIAL.apk
+SHA-256: 6B9A3FC07CF780BAF663E22A932C40C60BEEC598DAD838627E11B78B7F2E5824
+Size: 69,750,554 bytes (66.52 MB)
+
+AUTOMATED SUITES:
+1. TypeScript (npx tsc --noEmit): PASS (0 errors)
+2. Expo Install Check: PASS (Dependencies up to date)
+3. Expo Doctor: 18/18 checks passed. No issues detected!
+4. Fingerprint Regression (fingerprintRegression.js): 36/36 PASS
+5. Login Biometric/Password Regression: 20/20 PASS
+6. Device-Aware PIN Regression: 20/20 PASS
+7. Core System/Offline Regression: 9/9 PASS
+8. Hybrid Reservation Device Binding: 18/18 PASS
+9. Feature Recovery Static Regression: 6/6 PASS
+10. Date/Time Picker Regression: 21/21 PASS
+11. Web Conversion Static Regression: 10/10 PASS
+12. Offline Sync Engine Harness: 12/12 PASS
+Total Assertions: 152 / 152 PASS (100%)
+
+PHYSICAL UPGRADE AND STABILITY:
+- In-place upgrade from 9.1.0 (versionCode 601) to 9.2.0 (versionCode 602): PASS
+- Signature verification: Exact match with 9.1.0 release certificate
+- Standalone launch: PASS (Embedded index.android.bundle verified)
+- Cold starts: 10/10 PASS
+- Background/Foreground restores: 5/5 PASS
+- Logcat audit: 0 FATAL, 0 ANR, 0 Fatal JS, 0 UnhandledPromiseRejection
+
+UI HARDENING:
+- Redundant "Sign in with Fingerprint" button removed above One-Tap Login for both Student and Supervisor roles.
+- Single Unified "⚡ One-Tap Login" button preserved in Saved Account Card.
+
+SECURITY AUDIT:
+- Plaintext passwords in storage/logs: 0
+- Biometric template/data stored: 0
+- Offline biometric auth bypass: 0
+- Invalid role fallbacks: 0
+- Cross-dashboard role routing: 0

@@ -1,0 +1,138 @@
+SMART MESS 9.2.1 — QA REPORT
+==============================
+
+Date: 2026-09-18
+Version: 9.2.1 (versionCode 603)
+Hotfix Target: Photo feedback HTTP 500 (Internal Server Error)
+Device: TECNO-LJ7 (Physical Android)
+Tester: Automated + Manual Device QA
+
+==============================
+1. ROOT CAUSE VERIFICATION
+==============================
+
+Defect:
+  Student Feedback → Rate Today's Food → Add Photo → Submit
+  → "Internal Server Error"
+
+Root Cause:
+  Express.js body parser default limit (100KB) silently rejected
+  base64-encoded photo payloads (~1-5MB). The global error handler
+  returned a raw HTTP 500 instead of a structured JSON response.
+
+Confirmed By:
+  - Direct cURL to production API with photo payload → HTTP 500
+  - Express error logs showing PayloadTooLargeError
+  - After fix: same request → HTTP 201 with photo_url
+
+==============================
+2. BACKEND REGRESSION SUITE
+==============================
+
+Script: backend/scripts/feedback_photo_regression.js
+Target: https://smart-mess-backend.onrender.com/api
+Results: 14/14 PASS
+
+  [PASS] Small text feedback (no photo)
+  [PASS] Feedback with valid JPEG photo (< 1MB)
+  [PASS] Feedback with valid PNG photo
+  [PASS] Feedback with 1MB JPEG photo
+  [PASS] Feedback with 5MB photo (within limit)
+  [PASS] Feedback with 10MB photo (at limit boundary)
+  [PASS] Feedback with > 10MB photo → 413 Payload Too Large
+  [PASS] Feedback with invalid base64 → 415 Unsupported Media Type
+  [PASS] Feedback with empty photo field → treated as no photo
+  [PASS] Feedback with missing rating → 400 Bad Request
+  [PASS] Feedback with missing meal → 400 Bad Request
+  [PASS] Concurrent photo submissions (3 simultaneous)
+  [PASS] Duplicate submission guard
+  [PASS] Global error handler returns JSON (not HTML/stack trace)
+
+==============================
+3. FRONTEND REGRESSION SUITE
+==============================
+
+Script: frontend-old-ui-secure/src/tests/feedbackPhotoRegression.js
+Results: 20/20 PASS
+
+  [PASS] Feedback form renders correctly
+  [PASS] Star rating selection works (1-5)
+  [PASS] Comment input accepts text
+  [PASS] Add Photo button visible and enabled
+  [PASS] Photo picker launches on Add Photo tap
+  [PASS] Selected photo preview displays
+  [PASS] Replace button appears after photo selection
+  [PASS] Remove button appears after photo selection
+  [PASS] Replace/Remove/Add Photo disabled during submission
+  [PASS] Submit button disabled during submission
+  [PASS] Loading indicator shown during submission
+  [PASS] Successful submission shows success alert
+  [PASS] HTTP 413 shows "Photo too large" message
+  [PASS] HTTP 415 shows "Unsupported format" message
+  [PASS] HTTP 500 shows "Server error" message
+  [PASS] HTTP 401 shows "Authentication required" message
+  [PASS] Network error shows "Connection failed" message
+  [PASS] Form resets after successful submission
+  [PASS] Photo state clears after successful submission
+  [PASS] submittingMeal guard prevents duplicate submissions
+
+==============================
+4. EXISTING REGRESSION SUITES
+==============================
+
+  [PASS] Login flow (student, supervisor, admin)
+  [PASS] Meal reservation (breakfast, lunch, dinner)
+  [PASS] Attendance marking
+  [PASS] Leaderboard display
+  [PASS] Text-only feedback submission
+  [PASS] Role-based routing
+  [PASS] Fingerprint visibility states
+  [PASS] TypeScript compilation (0 errors)
+
+==============================
+5. PHYSICAL DEVICE VERIFICATION
+==============================
+
+Device: TECNO-LJ7
+Previous Version: 9.2.0 (versionCode 602)
+Install Method: adb install -r (upgrade)
+Install Result: SUCCESS
+
+Post-Install Checks:
+  [PASS] App launches without crash
+  [PASS] versionName = "9.2.1"
+  [PASS] versionCode = 603
+  [PASS] Student account still logged in (data preserved)
+  [PASS] Navigate to Rate Today's Food
+  [PASS] Select star rating
+  [PASS] Add photo from gallery
+  [PASS] Photo preview displayed
+  [PASS] Submit feedback with photo
+  [PASS] Success confirmation received
+  [PASS] No "Internal Server Error"
+  [PASS] Feedback visible in backend database
+
+==============================
+6. SIGNING VERIFICATION
+==============================
+
+9.2.0 APK signing certificate SHA-256:
+  Matches 9.2.1 APK signing certificate SHA-256
+  → Same keystore, same signing identity
+
+9.2.0 APK hash (frozen):
+  6B9A3FC07CF780BAF663E22A932C40C60BEEC598DAD838627E11B78B7F2E5824
+  → VERIFIED UNMODIFIED
+
+==============================
+7. FREEZE VERIFICATION
+==============================
+
+Protected NEW UI (frontend/):
+  Expected HEAD: 36ae74c6655a79878dc6df3b7a14adae713d4ef1
+  Verified HEAD: 36ae74c6655a79878dc6df3b7a14adae713d4ef1
+  Status: UNTOUCHED
+
+==============================
+VERDICT: PASS — READY FOR PRODUCTION DEPLOYMENT
+==============================

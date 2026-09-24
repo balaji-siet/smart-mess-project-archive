@@ -1,0 +1,62 @@
+================================================================================
+SMART MESS 9.1.0 — OFFICIAL STUDENT & SUPERVISOR APK INSTALLATION GUIDE
+================================================================================
+
+Package Name: com.shakthimess.smartmessv9
+Version: 9.1.0 (versionCode 601)
+Minimum Android Version: Android 7.0 (API level 24)
+Target Android Version: Android 15 (API level 36)
+Backend API Endpoint: https://bava-backend.onrender.com/api
+
+--------------------------------------------------------------------------------
+1. INSTALLATION ON ANDROID DEVICE
+--------------------------------------------------------------------------------
+Step 1: Transfer SMART_MESS_9.1.0_OFFICIAL.apk to your Android phone via:
+        - Direct download link / Google Drive
+        - USB cable file transfer
+        - Messaging app (e.g. WhatsApp, Telegram)
+
+Step 2: On your phone, tap the downloaded APK file.
+        If prompted:
+        - Tap "Settings" -> enable "Allow from this source" / "Install unknown apps".
+
+Step 3: Tap "Install" (or "Update" if upgrading from a previous version).
+        *Note on Signature Conflicts: If you previously had an experimental or debug build
+         installed and Android displays an "App not installed as package appears to be invalid"
+         or signature mismatch error, uninstall the old QA/debug version first, then tap
+         Install. Do NOT uninstall unless this specific error occurs.*
+
+Step 4: Once installation finishes, tap "Open" to launch SMART MESS.
+
+--------------------------------------------------------------------------------
+2. STANDALONE OPERATION VERIFICATION
+--------------------------------------------------------------------------------
+SMART MESS 9.1.0 is 100% standalone:
+- No development computer or USB cable is required.
+- No Metro packager or terminal processes are needed.
+- Connects directly to the live production server via standard mobile data (4G/5G) or Wi-Fi.
+- In offline scenarios, cached meal reservation views and pending offline queues function automatically.
+
+--------------------------------------------------------------------------------
+3. FIRST-TIME LOGIN INSTRUCTIONS
+--------------------------------------------------------------------------------
+STUDENT LOGIN:
+- Select the "Student" tab.
+- Enter your registered Roll Number (e.g. 25cy089 or TEST2026).
+- Enter your password (e.g. Student@123).
+- Check "Remember this account securely" to enable One-Tap Login.
+- Tap "Sign In".
+
+SUPERVISOR LOGIN:
+- Select the "Supervisor" tab.
+- Enter your registered Employee ID / Email.
+- Enter your password.
+- Tap "Sign In".
+
+--------------------------------------------------------------------------------
+4. TROUBLESHOOTING & NETWORK RECOVERY
+--------------------------------------------------------------------------------
+- If "Connection to SMART MESS server is required" appears, ensure mobile data or Wi-Fi is active.
+- To change password, tap the top-right Settings icon -> "Change Password".
+- For any assistance, contact the Hostel Mess Administration Office.
+================================================================================

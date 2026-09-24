@@ -1,0 +1,42 @@
+================================================================================
+SMART MESS 9.1.0 — OFFICIAL RELEASE NOTES
+================================================================================
+
+Release Date: 2026-09-15
+Version: 9.1.0 (versionCode 601)
+Application ID: com.shakthimess.smartmessv9
+Target Architecture: armeabi-v7a, arm64-v8a, x86, x86_64
+SHA-256: F0CB2107576B492F25B4A2D963881ACA810C49926DD075103C4D02173EF818AE
+
+--------------------------------------------------------------------------------
+HIGHLIGHTS & WHAT'S NEW IN VERSION 9.1.0
+--------------------------------------------------------------------------------
+1. Streamlined Student Dashboard:
+   - Centered on meal reservations with dedicated Today / Tomorrow meal booking.
+   - Removed cluttered auxiliary cards from main scroll.
+   - Preserved all underlying features (Live Attendance, Diagnostics, Password Change)
+     within the top Settings modal menu.
+   - Leaderboard and Rate Today's Food feedback sections cleanly integrated.
+
+2. Production Backend Hardening:
+   - 100% network traffic directed to production API: https://bava-backend.onrender.com/api
+   - 0 requests to localhost / 127.0.0.1 / 10.0.2.2 / LAN IPs.
+   - Graceful network loss and reconnection handling without app crashes.
+
+3. Complete Standalone Execution:
+   - Full Hermes JavaScript bundle and static assets embedded into the APK.
+   - Requires zero laptop, Metro bundler, ADB, or USB connection.
+   - Tested and verified on physical Android hardware (TECNO POVA 7 5G / TECNO-LJ7).
+
+4. Stability & Quality Gate:
+   - 20/20 cold starts passed without ANR or fatal exceptions.
+   - 10/10 background/restore cycles passed without activity loss.
+   - 124/124 automated regression tests passed (100%).
+   - TypeScript compilation: 0 errors.
+   - Expo Doctor: 18/18 checks passed.
+
+5. Security & Device Binding:
+   - Device-aware authentication policy with biometric fingerprint verification.
+   - PIN fallback protection for non-biometric devices.
+   - Encrypted secure storage for remembered account tokens.
+================================================================================

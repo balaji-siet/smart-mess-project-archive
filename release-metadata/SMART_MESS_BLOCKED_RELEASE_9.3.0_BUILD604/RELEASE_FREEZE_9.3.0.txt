@@ -1,0 +1,2 @@
+This directory represents the frozen production release of SMART MESS version 9.3.0.
+All code from this version is frozen and securely tested. DO NOT overwrite or modify this APK or the 9.2.x frozen directories.

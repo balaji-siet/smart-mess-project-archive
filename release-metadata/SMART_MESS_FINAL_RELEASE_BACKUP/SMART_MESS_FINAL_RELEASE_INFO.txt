@@ -1,0 +1,14 @@
+Project:
+SMART MESS – Food Wastage Reduction System
+
+Package:
+com.shakthimess.smartmessv9
+
+APK Size:
+69,183,308 bytes
+
+APK SHA-256:
+6000d38addf3a589e95e9cf5f92b806d1231d5232016248861f61d08544a8c4b
+
+Release Status:
+READY FOR DEMONSTRATION
